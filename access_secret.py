@@ -21,7 +21,7 @@ def get_secret(secret_name, region='us-east-1'):
         raise
 
 if __name__ == "__main__":
-    SECRET_NAME = "top-secret-info-xm9xlg77"  # terraform output which came after running the trraform apply command
+    SECRET_NAME = "top-secret-info-b5jz2egm"  # terraform output which came after running the trraform apply command
     REGION = "us-east-1"
 
     for i in range(2):
