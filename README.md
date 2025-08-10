@@ -166,13 +166,12 @@ aws-monitoring-project/
   - Confirm subscription in Console > SNS > Subscriptions.
   - Resubscribe:
     ```
-    aws sns subscribe --topic-arn arn:aws:sns:us-east-1:852567287225:security-alarms-<suffix> --protocol email --notification-endpoint kampai1573@gmail.com
+    aws sns subscribe --topic-arn arn:aws:sns:us-east-1:852567287225:security-alarms-<suffix> --protocol email --notification-endpoint mail@gmail.com
     ```
   - Check inbox/spam and wait ~5-15 minutes.
 - **GitHub Push Fails**:
   - Verify PAT (repo scope) and username (`ragh2003`).
   - Update Windows Credential Manager.
-  - Use correct command: `git push origin main`.
 
 ## Future Improvements
 - Fix CloudTrail-SNS notifications by debugging `cloudtrail-direct-sns` event rule and SNS topic policy.
